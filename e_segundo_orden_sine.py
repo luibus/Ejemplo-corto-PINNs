@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # PARÁMETROS MULTIESCALA Y DE FRECUENCIA SIREN
 # ==============================================================================
-EPSILON = 0.1  # Escala de heterogeneidad del material (prueba 0.5, 0.1, 0.05)
+EPSILON = 0.1  # Escala de heterogeneidad del material
 W0 = 10.0      # Frecuencia base de la activación Seno (SIREN)
 
 def get_A(x, eps):
@@ -27,7 +27,7 @@ class CapaSeno(nn.Module):
         self.w0 = w0
         self.linear = nn.Linear(in_features, out_features)
         
-        # Inicialización especial SIREN para estabilidad en las derivadas
+        # Inicialización especial SIREN para estabilizar las derivadas
         with torch.no_grad():
             if es_primera:
                 limite = 1.0 / in_features
