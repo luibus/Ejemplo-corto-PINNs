@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # PARÁMETROS MULTIESCALA Y SIREN
 # ==============================================================================
-EPSILON = 0.1  # Escala de heterogeneidad (prueba 0.1, 0.05)
+EPSILON = 0.1  # Escala de heterogeneidad
 W0 = 2.0       # Frecuencia moderada en capas Seno (Fourier ya inyecta 2*pi/eps)
 
 def get_A(x, eps):
