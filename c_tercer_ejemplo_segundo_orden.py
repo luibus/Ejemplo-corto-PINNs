@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Nota: En 2º orden converge bien para EPSILON = 0.5, pero colapsa a u=0 
 # (Loss_f = 1.0) para EPSILON <= 0.1 debido a la derivada de A_eps(x).
 # ==============================================================================
-EPSILON = 0.5  # Prueba a cambiarlo a 0.5 para ver cómo converge el de 2º orden
+EPSILON = 0.5  
 
 def get_A(x, eps):
     A_inv = 1.0 + 0.5 * torch.cos(2 * torch.pi * x / eps)
