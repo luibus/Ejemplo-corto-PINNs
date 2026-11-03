@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # PARÁMETROS MULTIESCALA Y SIREN
 # ==============================================================================
-EPSILON = 0.05  # Prueba 0.1, 0.05 o incluso 0.02
+EPSILON = 0.05  
 W0 = 2.0        # Frecuencia base de las capas Seno
 
 def get_A_inv(x, eps):
