@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # PARÁMETROS MULTIESCALA Y DE FRECUENCIA SIREN
 # ==============================================================================
-EPSILON = 0.1  # Prueba 0.1, 0.05 o 0.02
+EPSILON = 0.1  
 W0_U = 15.0    # Frecuencia alta para u(x) (captura oscilaciones multiescala)
 W0_J = 1.0     # Frecuencia suave para el flujo j(x) (es lineal)
 
