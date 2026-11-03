@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # PARÁMETRO MULTIESCALA
 # ==============================================================================
-EPSILON = 0.5  # FOSLS resuelve el perfil macroscópico incluso para eps = 0.1 o 0.05
+EPSILON = 0.5  
 
 def get_A_inv(x, eps):
     return 1.0 + 0.5 * torch.cos(2 * torch.pi * x / eps)
